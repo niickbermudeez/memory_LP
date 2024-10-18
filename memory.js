@@ -40,8 +40,8 @@ function comprovar() {
   if (carta2 != null) {
     if (carta1.src !== carta2.src) {
       setTimeout(() => {
-        tornaCarta(carta1);
-        tornaCarta(carta2);
+        voltejarCarta(carta1);
+        voltejarCarta(carta2);
       }, 500);
     } else {
       carta1.onclick = "";
@@ -54,7 +54,7 @@ function comprovar() {
   }
 }
 
-function tornaCarta(carta) {
+function voltejarCarta(carta) {
   carta.src = "./img/sobre.png";
   if (carta1 !== null && carta1.id == carta.id) {
     carta1 = null;
